@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Ericsson H5321gw 3G Wireless WAN Device Driver</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ericsson.h5321gw</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Ericsson H5321gw 3G Wireless WAN Device Driver</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>0x0BDB/0x193e Ericsson H5321 gw</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<key>IOClass</key>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBHostDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>DeviceModemOverrides</key>
+				<dict>
+					<key>AccessPointName</key>
+					<string>mobinilweb</string>
+					<key>ConnectionPersonality</key>
+					<string>Sony Ericsson GPRS</string>
+					<key>ConnectionScript</key>
+					<string>Generic GPRS.ccl</string>
+					<key>Device Vendor</key>
+					<string>Sony Ericsson</string>
+					<key>DeviceContextID</key>
+					<string>1</string>
+					<key>DeviceModel</key>
+					<string>GPRS (GSM/3G)</string>
+				</dict>
+				<key>DevicePPPOverrides</key>
+				<dict>
+					<key>LCPMTU</key>
+					<integer>1450</integer>
+				</dict>
+				<key>InfoCommands</key>
+				<dict>
+					<key>ATCommands</key>
+					<dict>
+						<key>DirectoryNumber</key>
+						<string>+cnum</string>
+						<key>IMEI</key>
+						<string>+cgsn</string>
+						<key>IMSI</key>
+						<string>+cimi</string>
+						<key>Manufacturer</key>
+						<string>+cgmi</string>
+						<key>Model</key>
+						<string>+cgmm</string>
+						<key>ModemSW</key>
+						<string>+cgmr</string>
+						<key>Serial#</key>
+						<string>+gsn</string>
+					</dict>
+					<key>HiddenProperties</key>
+					<dict>
+						<key>CommandPortBaseName</key>
+						<string>wwan</string>
+						<key>ControlPortBaseName</key>
+						<string>wwan</string>
+						<key>DataPortBaseName</key>
+						<string>wwan</string>
+						<key>InterfaceDriver</key>
+						<string>AppleUSBCDC</string>
+						<key>StatusType</key>
+						<string>CellPhoneGSM</string>
+					</dict>
+				</dict>
+				<key>Initializing</key>
+				<true/>
+				<key>InterfaceMapping</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>name</key>
+						<string>wwanDM</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>wwanGPS</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>name</key>
+						<string>wwan</string>
+					</dict>
+				</dict>
+				<key>WWAN</key>
+				<true/>
+			</dict>
+			<key>bcdDevice</key>
+			<integer>0</integer>
+			<key>idProduct</key>
+			<integer>6462</integer>
+			<key>idVendor</key>
+			<integer>3035</integer>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.driver.AppleUSBHostMergeProperties</key>
+		<string>1.0</string>
+		<key>com.apple.iokit.IOUSBHostFamily</key>
+		<string>1.0.1</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>9.0.0</string>
+	</dict>
+</dict>
+</plist>
